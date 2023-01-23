@@ -2,8 +2,7 @@
 
 import sys
 import pennylane as qml
-import numpy as np
-
+from pennylane import numpy as np
 
 def variational_ansatz(params, wires):
     """The variational ansatz circuit.
@@ -21,7 +20,13 @@ def variational_ansatz(params, wires):
     """
 
     # QHACK #
-
+    
+    # We use controlled-Y rotations
+    n_qubits = len(wires)
+    qml.PauliX(0)
+    for i in range(n_qubits-1):
+        qml.CRY(params[i], wires=[i,i+1])
+        qml.CNOT(wires=[i+1,i])
     # QHACK #
 
 
@@ -40,17 +45,27 @@ def run_vqe(H):
     energy = 0
 
     # QHACK #
-
+    num_qubits = len(H.wires)
     # Initialize the quantum device
-
+    dev = qml.device('default.qubit', wires=num_qubits)
     # Randomly choose initial parameters (how many do you need?)
+    params = np.random.randn(num_qubits-1)*0.1
 
     # Set up a cost function
-
+    @qml.qnode(dev)
+    def cost_fn(params):
+        variational_ansatz(params, range(num_qubits))
+        return qml.expval(H)
+    
     # Set up an optimizer
-
+    num_iters = 500
+    opt = qml.AdamOptimizer(0.01)
+    
     # Run the VQE by iterating over many steps of the optimizer
+    for i in range(num_iters):
+        params = opt.step(cost_fn, params)
 
+    energy = cost_fn(params)
     # QHACK #
 
     # Return the ground state energy

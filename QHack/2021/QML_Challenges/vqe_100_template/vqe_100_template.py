@@ -2,7 +2,7 @@
 
 import sys
 import pennylane as qml
-import numpy as np
+from pennylane import numpy as np
 
 
 def variational_ansatz(params, wires):
@@ -69,7 +69,20 @@ def run_vqe(H):
     # Create a quantum device, set up a cost funtion and optimizer, and run the VQE.
     # (We recommend ~500 iterations to ensure convergence for this problem,
     # or you can design your own convergence criteria)
+    
+    dev = qml.device('default.qubit', wires=num_qubits)
+    @qml.qnode(dev)
+    def cost_fn(params):
+        variational_ansatz(params, H.wires)
+        return qml.expval(H)
+    
+    # Optimization
+    opt = qml.NesterovMomentumOptimizer()
+    num_iter = 500
+    for i in range(num_iter):
+       params = opt.step(cost_fn, params)
 
+    energy = cost_fn(params)
     # QHACK #
 
     # Return the ground state energy
