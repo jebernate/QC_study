@@ -5,5 +5,5 @@ These have been proposed during events organized by the IBM and Xandadu team.
 
 ## Contents
 
-* Qiskit Global Summer School [(QGSS)](QGSS) (2021/2022)
-* [Qhack](Qhack) (2021/2022).
+* Qiskit Global Summer School [(QGSS)](https://github.com/jebernate/qc_study/tree/main/QGSS/) (2021/2022)
+* [Qhack](https://github.com/jebernate/qc_study/tree/main/QHack/) (2021/2022).
