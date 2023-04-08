@@ -16,6 +16,6 @@ Solutions to the labs of the Qiskit Global Summer School 2021/2022.
 
 1. [Lab 1:](2022/lab-1.ipynb) Introduction to Qiskit, complexity of the depth of a circuit.
 2. [Lab 2:](2022/lab-2.ipynb) Qiskit Opflow, time-evolution with quantum circuits.
-3. [Lab 3:](/2022/lab-3.ipynb) Projection noise, measurement noise and mitigation, coherent and incoherent noise.
-4. [Lab 4:](/2022/lab-4.ipynb) Time-evolution of the XXX Heisenberg model.
+3. [Lab 3:](2022/lab-3.ipynb) Projection noise, measurement noise and mitigation, coherent and incoherent noise.
+4. [Lab 4:](2022/lab-4.ipynb) Time-evolution of the XXX Heisenberg model.
 
