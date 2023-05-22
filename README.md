@@ -5,5 +5,5 @@ These have been proposed during events organized by the IBM and Xandadu team.
 
 ## Contents
 
-* Qiskit Global Summer School [(QGSS)](QGSS) (2021/2022)
+* Qiskit Global Summer School [(qiskit-summer-school)](qiskit-summer-school) (2021/2022)
 * [Qhack](QHack) (2021/2022).
