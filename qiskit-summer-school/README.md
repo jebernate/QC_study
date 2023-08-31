@@ -19,3 +19,10 @@ Solutions to the labs of the Qiskit Global Summer School 2021/2022.
 3. [Lab 3:](2022/lab-3.ipynb) Projection noise, measurement noise and mitigation, coherent and incoherent noise.
 4. [Lab 4:](2022/lab-4.ipynb) Time-evolution of the XXX Heisenberg model.
 
+### [2023](https://github.com/jebernate/qc_study/tree/main/qiskit-summer-school/2023)
+
+1. [Lab 1:](2023/lab1) Introduction to Qiskit, two qubit QFT.
+2. [Lab 2:](2023/lab2) Dynamic circuits, teleportation and CHSH inequality.
+3. [Lab 3:](2023/lab3) Quantum phase estimation and Shor's algorithm.
+4. [Lab 4:](2023/lab4) Iterative quantum phase estimation.
+5. [Lab 5:](2023/lab5) Noise models and error mitigation with Qiskit Runtime.
