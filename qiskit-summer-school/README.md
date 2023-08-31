@@ -4,7 +4,7 @@ Solutions to the labs of the Qiskit Global Summer School 2021/2022.
 
 ## Contents
 
-### [2021](https://github.com/jebernate/QGSC/tree/main/2021)
+### [2021](https://github.com/jebernate/qc_study/tree/main/qiskit-summer-school/2021)
 
 1. [Lab 1:](2021/lab-1) Introduction to Qiskit, implementation of the Deutsch-Joza algorithm.
 2. [Lab 2:](2021/lab-2) Introduction to variational algorithms, QAOA.
@@ -12,7 +12,7 @@ Solutions to the labs of the Qiskit Global Summer School 2021/2022.
 4. [Lab 4:](2021/lab-4) Training parametrized circuits: gradient descent, natural gradient, SPSA. Example: Transverse field Ising hamiltonian, layerwise training.
 5. [Lab 5:](2021/lab-5) Quantum Process Tomography of a parametrized quantum circuit on a noisy backend.
 
-### [2022](https://github.com/jebernate/QGSC/tree/main/2022)
+### [2022](https://github.com/jebernate/qc_study/tree/main/qiskit-summer-school/2022)
 
 1. [Lab 1:](2022/lab-1.ipynb) Introduction to Qiskit, complexity of the depth of a circuit.
 2. [Lab 2:](2022/lab-2.ipynb) Qiskit Opflow, time-evolution with quantum circuits.
